@@ -3,7 +3,7 @@ import { FilterPanel } from '../components/FilterPanel';
 import { fetchTrends, TrendRequest, Trend } from '../utils/api';
 
 const Home: React.FC = () => {
-  const [params, setParams] = useState<TrendRequest>({ geo: 'US', hl: 'en', hours: 24 });
+  const [params, setParams] = useState<TrendRequest>({ geo: 'HK', hl: 'en', hours: 24 });
   const [topics, setTopics] = useState<Trend[]>([]);
 
   useEffect(() => {
