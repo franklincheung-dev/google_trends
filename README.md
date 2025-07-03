@@ -20,6 +20,7 @@ uvicorn src.backend.api:app --reload
 
 ```bash
 # install frontend deps
+cd src/frontend
 npm install
 
 # run frontend
