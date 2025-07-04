@@ -4,12 +4,14 @@ from pydantic import BaseModel
 class TrendRequest(BaseModel):
     """Parameters accepted by the trends API."""
 
-    geo: Optional[str] = "US"
-    hl: Optional[str] = "en"
-    hours: Optional[int] = 24
+    # Location and language are required with defaults matching Google Trends UI
+    geo: str = "HK"
+    hl: str = "en"
+    # Optional filters. None values will be omitted from the generated URL
+    hours: Optional[int] = None
     category: Optional[str] = None
     sort: Optional[str] = None
-    status: Optional[str] = "now"
+    status: Optional[str] = None
 
 class Trend(BaseModel):
     """Single trending topic."""

@@ -2,6 +2,8 @@
 
 This project fetches "Trending Now" topics from Google Trends and provides a minimal React interface to filter and download data.
 
+By default the UI starts with `HK` as the location, `en` as the language and a 24 hour time range. Only location and language are required; all other filters are optional and omitted from requests when left blank.
+
 ## Requirements
 
 - Python 3.10+

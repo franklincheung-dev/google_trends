@@ -3,8 +3,8 @@ import React from 'react';
 import { FilterPanel } from '../../src/frontend/components/FilterPanel';
 
 test('renders filter panel', () => {
-  const { getByPlaceholderText } = render(
-    <FilterPanel params={{}} onChange={() => {}} />
+  const { getByLabelText } = render(
+    <FilterPanel params={{ geo: 'HK', hl: 'en' }} onChange={() => {}} />
   );
-  expect(getByPlaceholderText('Location')).toBeInTheDocument();
+  expect(getByLabelText('Location')).toBeInTheDocument();
 });
