@@ -1,10 +1,10 @@
 from src.backend.parser import parse_trending_html
 
 SAMPLE_HTML = """
-<html><body>
-<span class='title'>Topic 1</span>
-<span class='title'>Topic 2</span>
-</body></html>
+<table><tbody>
+<tr jsname='oKdM2c'><td class='jvkLtd'><div class='mZ3RIc'>Topic 1</div></td></tr>
+<tr jsname='oKdM2c'><td class='jvkLtd'><div class='mZ3RIc'>Topic 2</div></td></tr>
+</tbody></table>
 """
 
 
